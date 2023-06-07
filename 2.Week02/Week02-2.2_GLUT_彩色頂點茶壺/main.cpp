@@ -1,25 +1,25 @@
-///#include <bits/stdc++.h>¨ç¦¡®w¬O¤@­Ó¥]§tªñ¥G90%¨ç¦¡ªº¤@­Ó¨ç¥Ü®w(­è¦n³o´N¬O¨ä¤¤10%)¥À´ö¥Î
+///#include <bits/stdc++.h>å‡½å¼åº«æ˜¯ä¸€å€‹åŒ…å«è¿‘ä¹90%å‡½å¼çš„ä¸€å€‹å‡½ç¤ºåº«(å‰›å¥½é€™å°±æ˜¯å…¶ä¸­10%)æ¯æ¹¯ç”¨
 #include <GL/glut.h> ///(For Windows)
 ///#include <GLUT/glut.h>(For Mac OS)
 void display()
 {
-    ///glColor3f(0,1,0); ///R(Red)G(Green)B(Blue)¤T­ì¦â¶ñ¼g¨ç¦¡(¤w²¾¦Ü¤U¤è)
+    ///glColor3f(0,1,0); ///R(Red)G(Green)B(Blue)ä¸‰åŸè‰²å¡«å¯«å‡½å¼(å·²ç§»è‡³ä¸‹æ–¹)
     glBegin(GL_POLYGON);
-        glColor3f(1,0,0);  glVertex2f(0,1);  ///¤W­±
-        glColor3f(0,1,0);  glVertex2f(-1,-1); ///¥ª¤U¨¤
-        glColor3f(0,0,1);  glVertex2f(+1,-1); ///¥k¤U¨¤
+        glColor3f(1,0,0);  glVertex2f(0,1);  ///ä¸Šé¢
+        glColor3f(0,1,0);  glVertex2f(-1,-1); ///å·¦ä¸‹è§’
+        glColor3f(0,0,1);  glVertex2f(+1,-1); ///å³ä¸‹è§’
     glEnd();
 
-    glColor3f(1,1,0); ///R(Red)G(Green)B(Blue)¤T­ì¦â¶ñ¼g¨ç¦¡
-    glutSolidTeapot( 0.3 ); ///µe¥X¹ê¤ßªº¤p(0.3)¯ù³ı
+    glColor3f(1,1,0); ///R(Red)G(Green)B(Blue)ä¸‰åŸè‰²å¡«å¯«å‡½å¼
+    glutSolidTeapot( 0.3 ); ///ç•«å‡ºå¯¦å¿ƒçš„å°(0.3)èŒ¶å£º
 
-    glutSwapBuffers();  ///¥æ´«Åã¥Ü¥X¨Ó
+    glutSwapBuffers();  ///äº¤æ›é¡¯ç¤ºå‡ºä¾†
 }
-int main(int argc,char *argv[]) ///³o­Ómain()¬A¸¹¸Ìªºµ{¦¡½X¥i¥Hµ{¦¡Åª¨ú¤p¶Â¤º®e
+int main(int argc,char *argv[]) ///é€™å€‹main()æ‹¬è™Ÿè£¡çš„ç¨‹å¼ç¢¼å¯ä»¥ç¨‹å¼è®€å–å°é»‘å…§å®¹
 {
-    glutInit(&argc, argv); ///±Ò¥ÎGLUT¥\¯à
-    glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH); ///GLUTÅã¥Ü¼Ò¦¡
-    glutCreateWindow("Week02-2.2_GLUT_±Ä³»ÂI¯ù³ı"); ///­n«Ø¥ß¤@­Óµøµ¡,³o¬O¥Lªº¦WºÙ
-    glutDisplayFunc(display); ///­nÅã¥Üªº¨ç¥Ü display()
-    glutMainLoop();  ///¥D°j°é¥d¦b«á­±
+    glutInit(&argc, argv); ///å•Ÿç”¨GLUTåŠŸèƒ½
+    glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH); ///GLUTé¡¯ç¤ºæ¨¡å¼
+    glutCreateWindow("Week02-2.2_GLUT_å½©è‰²é ‚é»èŒ¶å£º"); ///è¦å»ºç«‹ä¸€å€‹è¦–çª—,é€™æ˜¯ä»–çš„åç¨±
+    glutDisplayFunc(display); ///è¦é¡¯ç¤ºçš„å‡½ç¤º display()
+    glutMainLoop();  ///ä¸»è¿´åœˆå¡åœ¨å¾Œé¢
 }
